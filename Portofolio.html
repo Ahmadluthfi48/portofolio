@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ahmad Luthfi</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full z-50 bg-gray-950/80 backdrop-blur border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">
+        <span class="text-white">Portfolio</span>
+        <span class="text-amber-400">Ahmad Luthfi</span>
+      </h1>
+      <ul class="hidden md:flex space-x-8 text-sm">
+        <li><a href="#home" class="hover:text-amber-400">Home</a></li>
+        <li><a href="#about" class="hover:text-amber-400">About</a></li>
+        <li><a href="#skills" class="hover:text-amber-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-amber-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="min-h-screen flex items-center px-6 pt-24">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- TEXT -->
+      <div>
+        <p class="text-sm uppercase tracking-widest text-gray-400">Web Developer</p>
+        <h2 class="text-4xl md:text-6xl font-bold mt-4">
+          Hi, Saya <span class="text-amber-400">Ahmad Luthfi</span>
+        </h2>
+        <p class="max-w-xl mt-6 text-gray-400">
+          Mahasiswa & Web Developer yang fokus pada pengembangan website modern,
+          UI/UX bersih, dan fungsionalitas yang optimal.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <a href="#projects" class="px-6 py-3 bg-amber-400 text-gray-900 rounded-xl font-semibold hover:bg-amber-300">
+            Lihat Project
+          </a>
+          <a href="#contact" class="px-6 py-3 border border-gray-700 rounded-xl hover:border-amber-400">
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <!-- FOTO -->
+      <div class="flex justify-center">
+        <img 
+          src="AhmadLuthfi.png" 
+          alt="Ahmad Luthfi"
+          class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl border-4 border-amber-400 shadow-xl"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-24">
+    <h3 class="text-3xl font-bold mb-6 text-amber-400">Tentang Saya</h3>
+    <p class="text-gray-400 leading-relaxed">
+      Saya adalah mahasiswa yang mempelajari pengembangan web menggunakan HTML, CSS, JavaScript, dan Tailwind CSS.
+      Saya terbiasa membangun website dengan sistem login, dashboard user, bill payment, dan UI modern.
+      Portfolio ini dibuat sebagai representasi keterampilan yang telah saya pelajari.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg-gray-900 py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-10 text-amber-400">Skills</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-950 rounded-2xl border border-gray-800">
+          <h4 class="font-semibold mb-3">Frontend</h4>
+          <ul class="text-gray-400 text-sm space-y-2">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-950 rounded-2xl border border-gray-800">
+          <h4 class="font-semibold mb-3">Backend & Logic</h4>
+          <ul class="text-gray-400 text-sm space-y-2">
+            <li>Basic PHP / Node.js</li>
+            <li>Authentication</li>
+            <li>Session & Local Storage</li>
+            <li>Bill Payment Logic</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-950 rounded-2xl border border-gray-800">
+          <h4 class="font-semibold mb-3">Tools</h4>
+          <ul class="text-gray-400 text-sm space-y-2">
+            <li>VS Code</li>
+            <li>Git & GitHub</li>
+            <li>ChatGPT</li>
+            <li>Copilot</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-24">
+    <h3 class="text-3xl font-bold mb-10 text-amber-400">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 bg-gray-900 rounded-2xl border border-gray-800">
+        <h4 class="font-semibold mb-2">Madmax Coffee Shop</h4>
+        <p class="text-gray-400 text-sm mb-4">Website coffee shop dengan sistem login, bill payment, dan UI modern bertema kopi.</p>
+        <span class="text-xs text-amber-400">HTML • CSS • JS • Tailwind</span>
+      </div>
+      <div class="p-6 bg-gray-900 rounded-2xl border border-gray-800">
+        <h4 class="font-semibold mb-2">User Dashboard</h4>
+        <p class="text-gray-400 text-sm mb-4">Dashboard user dengan autentikasi, header profile, dan logout.</p>
+        <span class="text-xs text-amber-400">JavaScript • UI Logic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-gray-900 py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-amber-400">Contact</h3>
+      <p class="text-gray-400 mb-8">Silakan hubungi saya untuk kerja sama atau diskusi project.</p>
+      <div class="space-y-3 text-sm">
+        <p>Email: <span class="text-amber-400">ahmadluthfi@email.com</span></p>
+        <p>GitHub: <span class="text-amber-400">github.com/ahmadluthfi</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-800">
+    © 2025 Ahmad Luthfi. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

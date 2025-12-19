@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-ahmad-luthfi",
+  "version": "1.0.0",
+  "description": "Portfolio website for Ahmad Luthfi",
+  "main": "Portofolio.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=Portofolio.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
